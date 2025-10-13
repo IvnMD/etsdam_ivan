@@ -2,5 +2,3 @@
 Repositorio para la asinatura ETS
 
 Vamos a trabajar en un repositorio en local y en remoto.
-
-Muy chill la vaina
