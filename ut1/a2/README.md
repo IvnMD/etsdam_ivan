@@ -3,9 +3,10 @@
 ### UT1/A1
 
 En este ejercicio practicaremos diferentes competencias como:
--La sintaxis Markdown
--El uso de GIT
--Enlaces a repositorio remoto
+
+- La sintaxis Markdown
+- El uso de GIT
+- Enlaces a repositorio remoto
 
 Este ejercicio nos pide:
 > Redacta un pequeño documento en formato Markdown llamado README.md que cumpla con los siguientes requisitos:
