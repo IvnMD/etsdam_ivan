@@ -1,4 +1,4 @@
-README DE LA ACTIVIDAD 1 
+# README DE LA ACTIVIDAD 1 
 
 Creamos los directorios y subdirectorios de trabajo de la asignatura. 
 
