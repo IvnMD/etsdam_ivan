@@ -1,6 +1,6 @@
-#README
+# README
 
-##UT1/A1
+### UT1/A1
 
 En este ejercicio practicaremos diferentes competencias como:
 -La sintaxis Markdown
