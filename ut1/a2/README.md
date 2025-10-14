@@ -52,5 +52,4 @@ public class Repaso3_16 {
 
 >—«Aquel que ayuda a otro a alcanzar el poder está condenado a caer, porque para conseguirlo habrá utilizado o su ingenio o su fuerza, y ambas cosas resultan incómodas para el que se ha vuelto poderoso» 
 >>Nicolas de Maquiavelo (III. LOS PRINCIPADOS MIXTOS).
->—«Se puede definir como buena utilización del delito (si es que se puede hablar bien del mal) la que se hace en un momento concreto, por la necesidad de asegurar la propia posición, sin insistir luego en ella, sino intentando sacarle el mayor provecho posible para los súbditos. Están mal usados los delitos que, aunque al principio son pocos, van aumentando con el tiempo en vez de desaparecer»
->>Nicolas de Maquiavelo (VIII. DE LOS QUE HAN LLEGADO AL PRINCIPADO MEDIANTE DELITOS).
+
