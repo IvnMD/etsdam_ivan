@@ -38,12 +38,12 @@ Hay dos tipos de listas en Markdown, ordenadas y desordenadas.
 
 Para crear listas desordenadas utiliza asteriscos (*), guiones medios (-) o simbolos de suma (+). Todos se veran iguales al procesarse:
 
-- Elemento de lista 1
-- Elemento de lista 2
-* Elemento de lista 3
-* Elemento de lista 4
-+ Elemento de lista 5
-+ Elemento de lista 6
+- Elemento de lista 1 con guion
+- Elemento de lista 2 con guion
+* Elemento de lista 3 con asterisco
+* Elemento de lista 4 con asterisco
++ Elemento de lista 5 con simbolo suma
++ Elemento de lista 6 con simbolo suma
 
 ### Listas ordenadas
 
@@ -71,10 +71,9 @@ Si quieres crear un bloque entero que contenga código. Lo único que tienes que
 
 ~~~
 #include <iostream>
-using namespace std;
 
 int main() {
-    cout << "Hola, mundo!" << endl;
+    std::cout << "Hola, mundo!" << std::endl;
     return 0;
 }
 
@@ -131,17 +130,15 @@ Markdown utiliza asteriscos o guiones bajos para enfatizar.
 
 Simplemente tendrás que envolver palabras o textos en éstos símbolos para conseguir cursivas o negritas.
 
-Markdown	Envoltorio
-*cursiva*	Asterisco simple
-_cursiva_	Guion bajo
-**negrita**	Asterisco doble
-__negrita__	Guion bajo doble
+- *cursiva*	- (Asterisco simple)
+- _cursiva_	 - (Guion bajo)
++ **negrita**	- (Asterisco doble)
++ __negrita__	- (Guion bajo doble)
 
 Estos enfatizadores son combinables entre si:
 
-Markdown	Resultado
-***cursiva y negrita***	 Tres asteriscos
-___cursiva y negrita___	 Tres guiones bajos
+* ***cursiva y negrita***	 - (Tres asteriscos)
+* ___cursiva y negrita___	- ( Tres guiones bajos)
 
 
 ## LINKS O ENLACES
@@ -150,8 +147,7 @@ ___cursiva y negrita___	 Tres guiones bajos
 
 Se crean escribiendo la palabra o texto enlazada entre [] corchetes, y el link en cuestión entre () paréntesis.
 
-Markdown	Resultado
-[enlace en línea](http://rae.es)	enlace en línea
+[Link o enlace](http://rae.es)
 
 
 ### Links/enlaces como referencia
@@ -199,7 +195,9 @@ También podrás añadir un título alternativo entrecomillándolo al final de l
 Ya que al añadir imágenes también estás tratando con URLs, puedes utilizar el método que viste anteriormente para incluir links mediante referencias, solo que en este caso los enlaces de referencia serán aquellos donde se encuentre tu imagen.
 
 De esta forma podrías insertar una imagen
+
 ![nombre de la imagen][img1]
+
 O dos, sin ensuciar tu espacio de escritura
 ![nombre de la imagen2][img2]
 
