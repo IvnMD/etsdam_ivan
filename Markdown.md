@@ -55,6 +55,7 @@ Para generar listas anidadas dentro de otras, simplemente tendrás que añadir c
     - Elemento de lista 4
         - Elemento de lista 5
         - Elemento de lista 6
+
 Para las listas ordenadas es tan sencillo como usar la sintaxis de tipo numero \"1." 
 
 1. Elemento de lista 1
