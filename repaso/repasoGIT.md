@@ -1,5 +1,3 @@
-Tienes razón — añadí la mayoría pero faltaron algunos comandos y líneas del Texto 2. He completado y unificado todo el contenido de ambos textos; aquí tienes la versión final que incluye expresamente cada comando y explicación presente en Texto 2.
-
 ---
 
 ### 🔧 Configuración básica
