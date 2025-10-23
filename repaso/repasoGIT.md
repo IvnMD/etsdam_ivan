@@ -1,4 +1,4 @@
-Aquí tienes una lista con los **comandos más habituales de Git**, explicados brevemente con su **funcionalidad y forma de uso** 👇
+Lista con los **comandos más habituales de Git**, explicados brevemente con su **funcionalidad y forma de uso** 👇
 
 ---
 
