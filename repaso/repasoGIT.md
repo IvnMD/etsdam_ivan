@@ -1,3 +1,5 @@
+Lista con los **comandos más habituales de Git**, explicados brevemente con su **funcionalidad y forma de uso** 👇
+
 ---
 
 ### 🔧 Configuración básica
@@ -17,7 +19,6 @@
 | ---------------------- | ------------------------------------------------------ | ----------------------------------------------------------- |
 | `git init [project]`   | Inicializa un nuevo repositorio local.                 | `git init mi-proyecto`                                      |
 | `git clone <url>`      | Clona un repositorio remoto (descarga todo el historial). | `git clone https://github.com/usuario/proyecto.git`         |
-| (Info)                 | Git está disponible en https://git-scm.com; GitHub ofrece GUI para Windows/macOS. | — |
 
 ---
 
