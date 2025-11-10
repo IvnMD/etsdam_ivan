@@ -45,7 +45,7 @@ Los modelos de desarrollo de software abordan la corrección de fallos y la inco
 
 - **Modelos Evolutivos o Incrementales**: Facilitan la "refinación en sucesivas versiones". Cada iteración permite incorporar cambios basados en la retroalimentación del usuario, lo que posibilita una adaptación rápida y efectiva. Aquí, las pruebas y ajustes se ejecutan en cada ciclo, permitiendo un desarrollo más ajustado a las necesidades reales.
 
-- **Metodologías Ágiles**: Con su enfoque en la adaptación, las metodologías ágiles enfatizan la "respuesta ante el cambio". A través de **iteraciones (sprints)** y **pequeñas mejoras continuas** como en XP (eXtreme Programming), se permite una revisión periódica que facilita la corrección de fallos y la incorporación de cambios. Los equipos pueden iterar con frecuencia, mejorando el software con base en comentarios inmediatos.
+- **Metodologías Ágiles**: Con su enfoque en la adaptación, las metodologías ágiles enfatizan la "respuesta ante el cambio". A través de iteraciones (sprints) y pequeñas mejoras continuas como en XP (eXtreme Programming), se permite una revisión periódica que facilita la corrección de fallos y la incorporación de cambios. Los equipos pueden iterar con frecuencia, mejorando el software con base en comentarios inmediatos.
 
 ### Papel de la Fase de Mantenimiento
 
