@@ -78,4 +78,4 @@ Visual Studio, por su parte, es ideal en entornos Windows, pero su consumo de re
 El criterio que más he valorado ha sido la **calidad del soporte para C++** y la **eficiencia del entorno**, ya que en este lenguaje la productividad depende en gran medida de la ayuda que el IDE brinda al programador.  
 En conclusión, **CLion** ofrece el equilibrio más adecuado entre rendimiento, usabilidad y soporte para proyectos en C++.
 
-![Logo de CLion](Clion.svg)
+![Logo de CLion](img/Clion.svg)
