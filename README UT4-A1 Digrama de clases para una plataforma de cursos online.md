@@ -56,7 +56,7 @@ En la siguiente tabla debes especificar cada clase, la relación existente entre
 A continuación se muestra el diagrama de clases: 
 
 
-![img] (/home/dam/Documentos/etsdam_ivan/ut4/a1/img/SimulacroExamen.png "Diagrama de imagenes")
+![img] (./img/SimulacroExamen.png "Diagrama de imagenes")
 
 
 
