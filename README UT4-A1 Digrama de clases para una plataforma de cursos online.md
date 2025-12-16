@@ -56,9 +56,7 @@ En la siguiente tabla debes especificar cada clase, la relación existente entre
 A continuación se muestra el diagrama de clases: 
 
 
-<img src= "./img/SimulacroExamen.png>
-
-
+<img src= "./img/SimulacroExamen.png">
 
 
 
