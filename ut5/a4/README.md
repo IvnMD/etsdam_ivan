@@ -56,7 +56,7 @@ Cuando el **Usuario** pulsa el botón “Comprar”, ocurre la siguiente secuenc
 
 A continuación se muestra el diagrama de secuencias:
 
-![Diagrama de secuencias](/img/ut5_a4.png)
+![Diagrama de secuencias](img/ut5_a4.png)
 
 
 
