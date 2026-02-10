@@ -1,0 +1,12 @@
+# Ignorar el propio nombre de la carpeta (evita duplicados accidentales)
+etsdam_ivan/
+
+# Archivos de sistema y basura de Windows
+Thumbs.db
+Desktop.ini
+*$*
+*.Identifier
+
+# Archivos temporales de editores
+*.save
+*.swp
