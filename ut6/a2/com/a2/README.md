@@ -83,7 +83,7 @@ public class Main {
 
 Capturas de la terminal:
 
-![Captura de la salida](img/001.png)
+![Captura de la salida](https://raw.githubusercontent.com/IvnMD/etsdam_ivan/main/ut6/a2/com/a2/img/001.png)
 
 ### Tests con JUnit
 
