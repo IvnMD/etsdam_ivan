@@ -1,4 +1,4 @@
-package com.a2.src.main.java.com.a2;
+package com.a2;
 
 public class CalculadoraNotas {
 
