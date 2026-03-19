@@ -83,9 +83,7 @@ public class Main {
 
 Capturas de la terminal:
 
-
 ![Captura de la salida](img/001.png)
-
 
 ### Tests con JUnit
 
