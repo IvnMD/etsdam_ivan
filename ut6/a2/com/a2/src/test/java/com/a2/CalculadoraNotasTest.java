@@ -1,4 +1,5 @@
-package com.a2.test.java.com.a2;
+package com.a2.src.test.java.com.a2;
+
 
     @Test
     void testMediaConDecimales() {
