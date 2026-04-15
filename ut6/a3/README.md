@@ -191,7 +191,13 @@ Posteriormente debes crear nuevos tests para comprobar también los siguientes c
 - lista vacía
 
 ```java
-
+    @Test
+    void testListaVacia() {
+        IllegalArgumentException excepcion = assertThrows(IllegalArgumentException.class, () -> {
+            CalculadoraNotas.calcularMedia(new int[] {});
+        });
+        assertEquals("Lista vacía", excepcion.getMessage());
+    }
 
 ````
 
@@ -200,6 +206,18 @@ Posteriormente debes crear nuevos tests para comprobar también los siguientes c
 
 ```java
 
+    @Test
+    void testNotaFueraRango() {
+        IllegalArgumentException excepcion = assertThrows(IllegalArgumentException.class, () -> {
+            CalculadoraNotas.calcularMedia(new int[] { 11 });
+        });
+        assertEquals("Nota fuera de rango", excepcion.getMessage());
+
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
+            CalculadoraNotas.calcularMedia(new int[] { -2 });
+        });
+        assertEquals("Nota fuera de rango", excepcion.getMessage());
+    }
 
 ````
 
@@ -211,8 +229,11 @@ Tras añadir los nuevos tests debes volver a ejecutar los tests e intentar conse
 ### Reflexión final
 
 + ¿Qué partes del código no estaban cubiertas?
+    - No estaban cubiertas ni comprobar si la lista estaba vacia ni si los datos introducidos estaban fuera de rango. Además, aunque no esta implementado, tambien podriamos realiar un test para comprobar la existencia de nulls en la lista o si incluso la lista es null en si misma.
 + ¿Qué tests has añadido?
+    - He añadido los test para comprobar si las notas fuera de rango enviaban correctamente el IllegalArgumentException y despues comprobaba si el mensaje de error corespondia, po si fuera un error producido por otra funcion o comprobacion.
 + ¿Qué cobertura final has obtenido?
+    - He obtenido un 94%, pero se podria ajustar más fácilmente. 
 
 Debes subir a tu repositorio de GitHub:
 
