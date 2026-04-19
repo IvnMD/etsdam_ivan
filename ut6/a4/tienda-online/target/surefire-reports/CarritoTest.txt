@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: CarritoTest
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.136 s <<< FAILURE! -- in CarritoTest
-CarritoTest.testDescuentoNegativoLanzaExcepcion -- Time elapsed: 0.017 s <<< FAILURE!
+Tests run: 15, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.129 s <<< FAILURE! -- in CarritoTest
+CarritoTest.testDescuentoNegativoLanzaExcepcion -- Time elapsed: 0.006 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Un descuento negativo debe lanzar IllegalArgumentException ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -13,7 +13,7 @@ org.opentest4j.AssertionFailedError: Un descuento negativo debe lanzar IllegalAr
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-CarritoTest.testTotalConDescuentoEnvioGratis -- Time elapsed: 0.004 s <<< FAILURE!
+CarritoTest.testTotalConDescuentoEnvioGratis -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Total con 10% descuento sobre 70€ más 5€ de envío debe ser 68€ ==> expected: <68.0> but was: <41.0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -48,7 +48,7 @@ org.opentest4j.AssertionFailedError: El subtotal de un producto debe ser precio 
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-CarritoTest.testSubtotalVariosProductos -- Time elapsed: 0.002 s <<< FAILURE!
+CarritoTest.testSubtotalVariosProductos -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: El subtotal debe ser precio*cantidad para cada producto sumado ==> expected: <70.0> but was: <40.0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -60,7 +60,7 @@ org.opentest4j.AssertionFailedError: El subtotal debe ser precio*cantidad para c
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-CarritoTest.testEnvioSubtotalExactamente100 -- Time elapsed: 0.002 s <<< FAILURE!
+CarritoTest.testEnvioSubtotalExactamente100 -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Un subtotal de exactamente 100€ debe tener envío gratis ==> expected: <0.0> but was: <5.0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

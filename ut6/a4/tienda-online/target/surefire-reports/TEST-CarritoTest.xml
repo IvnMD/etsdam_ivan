@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="CarritoTest" time="0.136" tests="15" errors="0" skipped="0" failures="6">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="CarritoTest" time="0.129" tests="15" errors="0" skipped="0" failures="6">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -11,7 +11,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/ivnmd/DAM/etsdam_ivan/ut6/a4/tienda-online/target/surefire/surefirebooter-20260419092828846_3.jar /home/ivnmd/DAM/etsdam_ivan/ut6/a4/tienda-online/target/surefire 2026-04-19T09-28-28_756-jvmRun1 surefire-20260419092828846_1tmp surefire_0-20260419092828846_2tmp"/>
+    <property name="sun.java.command" value="/home/ivnmd/DAM/etsdam_ivan/ut6/a4/tienda-online/target/surefire/surefirebooter-20260419094615339_3.jar /home/ivnmd/DAM/etsdam_ivan/ut6/a4/tienda-online/target/surefire 2026-04-19T09-46-15_274-jvmRun1 surefire-20260419094615339_1tmp surefire_0-20260419094615339_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/ivnmd/DAM/etsdam_ivan/ut6/a4/tienda-online/target/test-classes:/home/ivnmd/DAM/etsdam_ivan/ut6/a4/tienda-online/target/classes:/home/ivnmd/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/ivnmd/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/ivnmd/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ivnmd/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/ivnmd/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ivnmd/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/ivnmd/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/ivnmd/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -26,7 +26,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/ivnmd/DAM/etsdam_ivan/ut6/a4/tienda-online/target/surefire/surefirebooter-20260419092828846_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/ivnmd/DAM/etsdam_ivan/ut6/a4/tienda-online/target/surefire/surefirebooter-20260419094615339_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.18+8-Ubuntu-124.04.1"/>
     <property name="user.name" value="ivnmd"/>
@@ -35,6 +35,7 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/home/ivnmd/.vscode-server/extensions/oracle.oracle-java-25.1.0/nbcode/java/maven-nblib/netbeans-eventspy.jar"/>
     <property name="localRepository" value="/home/ivnmd/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
     <property name="java.io.tmpdir" value="/tmp"/>
@@ -51,9 +52,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testSubtotalCantidadUno" classname="CarritoTest" time="0.037"/>
+  <testcase name="testSubtotalCantidadUno" classname="CarritoTest" time="0.046"/>
   <testcase name="testEnvioSubtotalMayor100" classname="CarritoTest" time="0.002"/>
-  <testcase name="testDescuentoNegativoLanzaExcepcion" classname="CarritoTest" time="0.017">
+  <testcase name="testDescuentoNegativoLanzaExcepcion" classname="CarritoTest" time="0.006">
     <failure message="Un descuento negativo debe lanzar IllegalArgumentException ==&gt; Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Un descuento negativo debe lanzar IllegalArgumentException ==> Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -65,9 +66,9 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></failure>
   </testcase>
-  <testcase name="testTotalSinDescuentoConEnvio" classname="CarritoTest" time="0.001"/>
+  <testcase name="testTotalSinDescuentoConEnvio" classname="CarritoTest" time="0.002"/>
   <testcase name="testSubtotalCarritoVacio" classname="CarritoTest" time="0.002"/>
-  <testcase name="testTotalConDescuentoEnvioGratis" classname="CarritoTest" time="0.004">
+  <testcase name="testTotalConDescuentoEnvioGratis" classname="CarritoTest" time="0.003">
     <failure message="Total con 10% descuento sobre 70€ más 5€ de envío debe ser 68€ ==&gt; expected: &lt;68.0&gt; but was: &lt;41.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Total con 10% descuento sobre 70€ más 5€ de envío debe ser 68€ ==> expected: <68.0> but was: <41.0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -106,7 +107,7 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></failure>
   </testcase>
-  <testcase name="testSubtotalVariosProductos" classname="CarritoTest" time="0.002">
+  <testcase name="testSubtotalVariosProductos" classname="CarritoTest" time="0.001">
     <failure message="El subtotal debe ser precio*cantidad para cada producto sumado ==&gt; expected: &lt;70.0&gt; but was: &lt;40.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: El subtotal debe ser precio*cantidad para cada producto sumado ==> expected: <70.0> but was: <40.0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -120,9 +121,9 @@
 ]]></failure>
   </testcase>
   <testcase name="testDescuentoCienPorciento" classname="CarritoTest" time="0.001"/>
-  <testcase name="testDescuentoCero" classname="CarritoTest" time="0.0"/>
+  <testcase name="testDescuentoCero" classname="CarritoTest" time="0.001"/>
   <testcase name="testTotalEnvioGratis" classname="CarritoTest" time="0.001"/>
-  <testcase name="testEnvioSubtotalExactamente100" classname="CarritoTest" time="0.002">
+  <testcase name="testEnvioSubtotalExactamente100" classname="CarritoTest" time="0.001">
     <failure message="Un subtotal de exactamente 100€ debe tener envío gratis ==&gt; expected: &lt;0.0&gt; but was: &lt;5.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Un subtotal de exactamente 100€ debe tener envío gratis ==> expected: <0.0> but was: <5.0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
