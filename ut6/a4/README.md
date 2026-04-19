@@ -167,7 +167,14 @@ Responde a las siguientes preguntas en este documento:
 - Indica qué tests han fallado durante la ejecución inicial
 - Explica brevemente por qué esos tests deberían pasar según el comportamiento descrito
 
+Han fallado 6 de los 15 tests ejecutados:
 
+- **`testSubtotalVariosProductos`** — devuelve 40.0 en lugar de 70.0. Debería pasar porque el enunciado indica que el subtotal es `precio × cantidad` por producto. El teclado (30€ × 2) y el ratón (10€ × 1) suman 70€, no 40€.
+- **`testSubtotalUnProducto`** — devuelve 200.0 en lugar de 600.0. Un monitor de 200€ con cantidad 3 debe sumar 600€.
+- **`testEnvioSubtotalExactamente100`** — devuelve 5.0 en lugar de 0.0. El enunciado especifica `>= 100` como condición de envío gratis, por lo que 100€ exactos deben tener envío gratuito.
+- **`testDescuentoNegativoLanzaExcepcion`** — no lanza excepción. El descuento debe estar entre 0 y 100; un valor negativo es inválido y debería ser rechazado.
+- **`testDescuentoMayorDe100LanzaExcepcion`** — no lanza excepción. Un descuento de 150% es inválido por la misma razón.
+- **`testTotalConDescuentoEnvioGratis`** — devuelve 41.0 en lugar de 68.0. Es consecuencia del bug en `calcularSubtotal`: al calcular mal el subtotal (40€ en vez de 70€), el total resultante también es incorrecto.
 
 #### 2. Identificación de errores en el código
 
@@ -177,7 +184,23 @@ Si has detectado errores en el programa, indica:
 - qué línea del código es incorrecta
 - por qué produce un resultado incorrecto
 
+**Error 1 — `calcularSubtotal()`**
+```java
+subtotal += p.getPrecio(); // línea incorrecta
+```
+Solo acumula el precio unitario, ignorando la cantidad. Si hay 3 unidades de un producto, debería sumar `precio × 3` pero suma solo `precio`.
 
+**Error 2 — `calcularEnvio()`**
+```java
+if (subtotal > 100) // línea incorrecta
+```
+El operador `>` excluye el valor límite. Con un subtotal de exactamente 100€ la condición es `false` y cobra 5€ de envío cuando debería ser gratuito.
+
+**Error 3 — `aplicarDescuento()`**
+```java
+return subtotal - (subtotal * descuento / 100); // sin validación previa
+```
+No comprueba si el descuento está en el rango válido (0–100), por lo que acepta valores negativos o superiores a 100 sin ningún error.
 
 #### 3. Corrección propuesta
 
@@ -185,15 +208,43 @@ Explica cómo se debería corregir el código para que el comportamiento sea el 
 
 Incluye el fragmento de código corregido.
 
+**Corrección 1 — multiplicar precio por cantidad:**
+```java
+subtotal += p.getPrecio() * p.getCantidad();
+```
 
+**Corrección 2 — cambiar `>` por `>=`:**
+```java
+if (subtotal >= 100) {
+    return 0;
+} else {
+    return 5;
+}
+```
+
+**Corrección 3 — añadir validación del descuento:**
+```java
+public double aplicarDescuento(double subtotal, double descuento) {
+    if (descuento < 0 || descuento > 100) {
+        throw new IllegalArgumentException("Descuento inválido: debe estar entre 0 y 100");
+    }
+    return subtotal - (subtotal * descuento / 100);
+}
+```
 
 #### 4. Resultado final
 
 Tras diseñar los tests y analizar el código:
 
-- ¿cuántos tests has implementado?
-- ¿qué porcentaje de cobertura has obtenido?
-- ¿todos los tests pasan correctamente?
+- ¿cuántos tests has implementado? **15 tests**
+- ¿qué porcentaje de cobertura has obtenido? 
+ ![Jacoco general](IMG/Jacoco.png)
+
+ - **92% de instrucciones y 100% de ramas.** Las únicas instrucciones no cubiertas son los métodos `getNombre()` y `getCantidad()` de la clase `Producto`, que no son invocados directamente por los tests ya que no forman parte de la lógica de negocio probada:
+
+ - ![Jacoco producto](IMG/JacocoProducto.png)
+
+- ¿todos los tests pasan correctamente? **No con el código original, solo 9 de 15 pasan. Con el código corregido los 15 pasan correctamente.**
 
 
 
